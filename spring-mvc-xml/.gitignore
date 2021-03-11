@@ -1,4 +1,5 @@
 *.class
+*.iml
 
 #folders#
 /target
@@ -6,6 +7,7 @@
 /data
 /src/main/webapp/WEB-INF/classes
 */META-INF/*
+/.idea
 
 # Packaged files #
 *.jar

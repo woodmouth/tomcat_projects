@@ -30,6 +30,9 @@ public class RequestAndPathVariableValidationController {
     }
 
     @GetMapping("/liveness")
+    // 跨域测试
+    // 果然协议，域名和端口是必须一致的，域名是必须完全一致，没有说一级和二级匹配就行这样的说法
+    @CrossOrigin(origins = "https://www.baidu.com")
     public String healthCheck() {
         logger.info("healthCheck()");
         return "Okay";
